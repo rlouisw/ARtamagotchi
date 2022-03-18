@@ -1,0 +1,11 @@
+Model Information:
+* title:	Ichigotchi
+* source:	https://sketchfab.com/3d-models/ichigotchi-9a5c9363549a48438b8858347c467d91
+* author:	Fayme Wong (https://sketchfab.com/FaymeWong)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Ichigotchi" (https://sketchfab.com/3d-models/ichigotchi-9a5c9363549a48438b8858347c467d91) by Fayme Wong (https://sketchfab.com/FaymeWong) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

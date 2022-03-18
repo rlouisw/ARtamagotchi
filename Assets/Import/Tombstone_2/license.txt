@@ -1,0 +1,11 @@
+Model Information:
+* title:	Tombstone 2
+* source:	https://sketchfab.com/3d-models/tombstone-2-b2fb01fea84e42f09c9f642422fadf92
+* author:	Cavalqs (https://sketchfab.com/Cavalqs)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Tombstone 2" (https://sketchfab.com/3d-models/tombstone-2-b2fb01fea84e42f09c9f642422fadf92) by Cavalqs (https://sketchfab.com/Cavalqs) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

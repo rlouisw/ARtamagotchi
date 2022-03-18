@@ -1,0 +1,11 @@
+Model Information:
+* title:	Yoshieggs (Super Mario Bros)
+* source:	https://sketchfab.com/3d-models/yoshieggs-super-mario-bros-af18d376442f478c8edd0739e5bd65f5
+* author:	Anthony Yanez (https://sketchfab.com/paulyanez)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Yoshieggs (Super Mario Bros)" (https://sketchfab.com/3d-models/yoshieggs-super-mario-bros-af18d376442f478c8edd0739e5bd65f5) by Anthony Yanez (https://sketchfab.com/paulyanez) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
