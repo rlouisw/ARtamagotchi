@@ -19,7 +19,7 @@ public class Meter_script : MonoBehaviour
     public void show_meter()
     {
         // Alternate between showing and hiding meter
-        if (gameObject.active == true)
+        if (gameObject.activeInHierarchy == true)
         {
             gameObject.SetActive(false);
         }
