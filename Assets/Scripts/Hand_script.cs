@@ -44,6 +44,6 @@ public class Hand_script : MonoBehaviour
         gameObject.SetActive(true);
         cntdnw = 3.0f;
         // Increment happiness variable for tamagotchi
-        tamagotchi.happiness++;
+        tamagotchi.happiness += 20;
     }
 }
