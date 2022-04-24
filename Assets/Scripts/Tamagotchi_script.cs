@@ -9,9 +9,9 @@ public class Tamagotchi_script : MonoBehaviour
     public int hunger = 20;
     public float age = 0;
     public int weight = 5;
-    private float currentAge = 0;
-    private float birthAge = 0;
-    private int stage = 0;
+    public float currentAge = 0;
+    public float birthAge = 0;
+    public int stage = 0;
     public GameObject pinkEgg = null;
     public GameObject greenEgg = null;
     public GameObject yellowEgg = null;
@@ -32,8 +32,10 @@ public class Tamagotchi_script : MonoBehaviour
     public GameObject devButtons = null;
     public GameObject meter = null;
     public GameObject startOverP = null;
-    private GameObject egg = null;
-    private GameObject adult = null;
+    public GameObject egg = null;
+    EggHatching_script Hatch_script = null;
+    Flush_script clean_script = null;
+    public GameObject adult = null;
 
     // Start is called before the first frame update
     void Start()
@@ -120,16 +122,8 @@ public class Tamagotchi_script : MonoBehaviour
 
     public void hatchEgg()
     {
-        egg.SetActive(false);
-        egg = null;
-        baby.SetActive(true);
-        playerButtons.SetActive(true);
-        birthAge = age;
-        currentAge = age;
-        stage = 2;
-        happiness = 40;
-        hunger = 20;
-        weight = 5;
+        Hatch_script = egg.GetComponent<EggHatching_script>();
+        Hatch_script.HatchEgg();
     }
 
     public void evolve()
@@ -230,9 +224,10 @@ public class Tamagotchi_script : MonoBehaviour
 
     public void clean()
     {
+        clean_script = poo.GetComponent<Flush_script>();
         if (poo.activeInHierarchy)
         {
-            poo.SetActive(false);
+            clean_script.FlushPoo();
             happy(20);
         }
         else if (stage == 2)
