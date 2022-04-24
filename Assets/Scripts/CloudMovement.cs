@@ -18,7 +18,7 @@ public class CloudMovement : MonoBehaviour
         transform.position = new Vector2(transform.position.x - speed, transform.position.y);
         if(transform.position.x < loopPos)
         {
-            Instantiate(gameObject, new Vector2(11f, transform.position.y), Quaternion.identity, transform.parent);
+            Instantiate(gameObject, new Vector2(transform.position.x + 900, transform.position.y), Quaternion.identity, transform.parent);
             Destroy(gameObject);
             
         }
