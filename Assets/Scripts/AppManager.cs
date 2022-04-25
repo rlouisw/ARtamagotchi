@@ -118,6 +118,11 @@ public class AppManager : MonoBehaviour
         {
             weatherController.CloudsNightBroken();
         }
+        else if (weatherInfo["weather"][0]["icon"] == "11d")
+        {
+            weatherController.CloudCover();
+            weatherController.RainNight();
+        }
 
         print(weatherInfo["weather"][0]["description"]);
         print(weatherInfo["weather"][0]["icon"]);
