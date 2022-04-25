@@ -156,7 +156,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3094986273084290483}
-  - component: {fileID: 2012486824001788724}
+  - component: {fileID: 2321036095240892622}
   m_Layer: 0
   m_Name: Everthing but feet
   m_TagString: Untagged
@@ -187,7 +187,7 @@ Transform:
   m_Father: {fileID: 9310826958585033}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &2012486824001788724
+--- !u!95 &2321036095240892622
 Animator:
   serializedVersion: 4
   m_ObjectHideFlags: 0
@@ -197,7 +197,7 @@ Animator:
   m_GameObject: {fileID: 1026428600947017596}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: c3e64d33822959e4c82568316a231283, type: 2}
+  m_Controller: {fileID: 9100000, guid: 12a0fde358905174688cbaba32532f65, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
