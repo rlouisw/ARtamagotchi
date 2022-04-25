@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2295016049045698369}
   - component: {fileID: 8229333379963554754}
   - component: {fileID: 7004068849953774234}
+  - component: {fileID: 5674698864986111254}
   m_Layer: 0
   m_Name: Green Egg
   m_TagString: Untagged
@@ -83,3 +84,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &5674698864986111254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6280295465909829863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5adebc5c075256249b0739d8820f830f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ps: {fileID: 0}
