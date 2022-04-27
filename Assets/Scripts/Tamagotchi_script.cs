@@ -12,6 +12,9 @@ public class Tamagotchi_script : MonoBehaviour
     public float currentAge = 0;
     public float birthAge = 0;
     public int stage = 0;
+    public int currentHealth;
+    public int maxHealth = 100;
+
     public GameObject pinkEgg = null;
     public GameObject greenEgg = null;
     public GameObject yellowEgg = null;
@@ -35,12 +38,17 @@ public class Tamagotchi_script : MonoBehaviour
     public GameObject egg = null;
     EggHatching_script Hatch_script = null;
     Flush_script clean_script = null;
+     //create ref to health bar script 
+    public healthBar healthbar; 
     public GameObject adult = null;
 
     // Start is called before the first frame update
     void Start()
     {
         stage = 0;
+        currentHealth = maxHealth; 
+        healthbar.SetMax(maxHealth); 
+
     }
 
     // Update is called once per frame
@@ -293,5 +301,13 @@ public class Tamagotchi_script : MonoBehaviour
     public void healthDownDev()
     {
         happy(-20);
+    }
+
+    void takeDamage (int damage) {
+        currentHealth -= damage; 
+        if (currentHealth <0) {
+            currentHealth = 0; 
+        }
+        healthbar.SetHealth(currentHealth); 
     }
 }
