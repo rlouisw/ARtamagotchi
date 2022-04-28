@@ -741,6 +741,11 @@ MonoBehaviour:
   hunger: 67
   age: 0
   weight: 20
+  currentAge: 0
+  birthAge: 0
+  stage: 0
+  currentHealth: 0
+  maxHealth: 100
   pinkEgg: {fileID: 35030800}
   greenEgg: {fileID: 1263045611}
   yellowEgg: {fileID: 1361209258}
@@ -761,6 +766,38 @@ MonoBehaviour:
   devButtons: {fileID: 308491290}
   meter: {fileID: 1354923321}
   startOverP: {fileID: 1378774025}
+  egg: {fileID: 0}
+  weatherStates: {fileID: 0}
+  babyG: {fileID: 0}
+  grapeG: {fileID: 0}
+  kiwiG: {fileID: 0}
+  pearG: {fileID: 0}
+  peachG: {fileID: 0}
+  ichigotchiG: {fileID: 0}
+  rug: {fileID: 0}
+  outdoorG: {fileID: 0}
+  babyH: {fileID: 0}
+  babyS: {fileID: 0}
+  grapeH: {fileID: 0}
+  grapeS: {fileID: 0}
+  kiwiH: {fileID: 0}
+  kiwiS: {fileID: 0}
+  pearH: {fileID: 0}
+  pearS: {fileID: 0}
+  peachH: {fileID: 0}
+  peachS: {fileID: 0}
+  ichigotchiH: {fileID: 0}
+  ichigotchiS: {fileID: 0}
+  win: {fileID: 0}
+  lose: {fileID: 0}
+  happyS: {fileID: 0}
+  sadS: {fileID: 0}
+  audio: {fileID: 0}
+  Evo_script: {fileID: 0}
+  Hatch_script: {fileID: 0}
+  clean_script: {fileID: 0}
+  healthbar: {fileID: 0}
+  adult: {fileID: 0}
 --- !u!1 &47911301 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1641181945698395150, guid: f86c5b78aff7ee24a817756a45751348, type: 3}
@@ -30405,6 +30442,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f688af7542eb1de4bb93b2399ed0d321, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tamagotchi: {fileID: 0}
 --- !u!95 &1259620283
 Animator:
   serializedVersion: 4
