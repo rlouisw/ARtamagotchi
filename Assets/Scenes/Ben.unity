@@ -1629,7 +1629,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5adebc5c075256249b0739d8820f830f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ps: {fileID: 0}
+  Hatch_p: {fileID: 1757263740}
+  tamagotchi: {fileID: 2129158684}
+  ps: {fileID: 1757263743}
+  anim: {fileID: 84237033}
 --- !u!111 &84237033
 Animation:
   m_ObjectHideFlags: 0
@@ -4928,6 +4931,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f688af7542eb1de4bb93b2399ed0d321, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tamagotchi: {fileID: 2129158684}
 --- !u!95 &275117141
 Animator:
   serializedVersion: 4
@@ -6913,36 +6917,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!21 &412896497
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 'block_scaledMaterial
-
-    45064'
-  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 5
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 466130d690664350b2dc76cc014ed082, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats: []
-    m_Colors:
-    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
-  m_BuildTextureStacks: []
 --- !u!1 &417193112
 GameObject:
   m_ObjectHideFlags: 0
@@ -31451,7 +31425,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5adebc5c075256249b0739d8820f830f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ps: {fileID: 0}
+  Hatch_p: {fileID: 1757263740}
+  tamagotchi: {fileID: 2129158684}
+  ps: {fileID: 1757263743}
+  anim: {fileID: 989724304}
 --- !u!111 &989724304
 Animation:
   m_ObjectHideFlags: 0
@@ -35855,7 +35832,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 412896497}
+  - {fileID: 1319607924}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -36404,6 +36381,36 @@ Transform:
   m_Father: {fileID: 1835379863}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!21 &1319607924
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 'block_scaledMaterial
+
+    190998'
+  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 466130d690664350b2dc76cc014ed082, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats: []
+    m_Colors:
+    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1 &1323020395
 GameObject:
   m_ObjectHideFlags: 0
@@ -53229,7 +53236,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5adebc5c075256249b0739d8820f830f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ps: {fileID: 0}
+  Hatch_p: {fileID: 1757263740}
+  tamagotchi: {fileID: 2129158684}
+  ps: {fileID: 1757263743}
+  anim: {fileID: 1790383226}
 --- !u!111 &1790383226
 Animation:
   m_ObjectHideFlags: 0
@@ -55141,7 +55151,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5adebc5c075256249b0739d8820f830f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ps: {fileID: 0}
+  Hatch_p: {fileID: 1757263740}
+  tamagotchi: {fileID: 2129158684}
+  ps: {fileID: 1757263743}
+  anim: {fileID: 1914779383}
 --- !u!111 &1914779383
 Animation:
   m_ObjectHideFlags: 0
@@ -61900,7 +61913,8 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5547524569573812141, guid: 2829cadcb67d9bb4582ac6d746872cc5, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 2829cadcb67d9bb4582ac6d746872cc5, type: 3}
 --- !u!4 &2035267182 stripped
 Transform:
@@ -61924,6 +61938,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df8c3d24c6508c649909b48f352b93c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tamagotchi: {fileID: 2129158684}
+  anim: {fileID: 2035267185}
 --- !u!111 &2035267185
 Animation:
   m_ObjectHideFlags: 0
@@ -63525,6 +63541,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7025377805782840090, guid: f86c5b78aff7ee24a817756a45751348, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9036069804121505021, guid: f86c5b78aff7ee24a817756a45751348, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -63617,6 +63637,8 @@ MonoBehaviour:
   currentAge: 0
   birthAge: 0
   stage: 0
+  currentHealth: 0
+  maxHealth: 100
   pinkEgg: {fileID: 84237030}
   greenEgg: {fileID: 989724301}
   yellowEgg: {fileID: 1790383223}
@@ -63638,7 +63660,41 @@ MonoBehaviour:
   meter: {fileID: 738158402}
   startOverP: {fileID: 474979500}
   egg: {fileID: 0}
+  Evo_script: {fileID: 0}
+  Hatch_script: {fileID: 0}
+  clean_script: {fileID: 2035267184}
+  healthbar: {fileID: 0}
   adult: {fileID: 0}
+--- !u!114 &2129158687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2129158682}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c828e4ed9e8c26d448b30612f97edd47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tamagotchi: {fileID: 2129158684}
+  anim: {fileID: 2129158688}
+--- !u!111 &2129158688
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2129158682}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 87d65273534bf104ca425e1963de1368, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 87d65273534bf104ca425e1963de1368, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &2130064999
 GameObject:
   m_ObjectHideFlags: 0

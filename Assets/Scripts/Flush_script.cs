@@ -9,8 +9,8 @@ public class Flush_script : MonoBehaviour
     // Clean poo variable
     int clean = 0;
     // Set reference for tamagotchi and animation
-    Tamagotchi_script tamagotchi = null;
-    private Animation anim;
+    public Tamagotchi_script tamagotchi = null;
+    public Animation anim;
 
     // Start is called before the first frame update
     void Start()

@@ -36,8 +36,10 @@ public class Tamagotchi_script : MonoBehaviour
     public GameObject meter = null;
     public GameObject startOverP = null;
     public GameObject egg = null;
-    EggHatching_script Hatch_script = null;
-    Flush_script clean_script = null;
+    // Animations
+    public Evolution_script Evo_script = null;
+    public EggHatching_script Hatch_script = null;
+    public Flush_script clean_script = null;
      //create ref to health bar script 
     public healthBar healthbar; 
     public GameObject adult = null;
@@ -136,38 +138,8 @@ public class Tamagotchi_script : MonoBehaviour
 
     public void evolve()
     {
-        baby.SetActive(false);
-        poo.SetActive(false);
-        burger.SetActive(false);
-        cookie.SetActive(false);
-        if (happiness == 100)
-        {
-            adult = ichigotchi;
-            weight += 20;
-        }
-        else if (happiness >= 80)
-        {
-            adult = peach;
-            weight += 25;
-        }
-        else if (happiness >= 60)
-        {
-            adult = pear;
-            weight += 30;
-        }
-        else if (happiness >= 40)
-        {
-            adult = kiwi;
-            weight += 15;
-        }
-        else
-        {
-            adult = grape;
-            weight += 10;
-        }
-        adult.SetActive(true);
-        currentAge = age;
-        stage = 3;
+        Evo_script = baby.GetComponent<Evolution_script>();
+        Evo_script.Evolve();
     }
 
     public void end()

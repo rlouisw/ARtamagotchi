@@ -7,7 +7,7 @@ public class Hand_script : MonoBehaviour
     // 3 second timer for petting tamagotchi
     float cntdnw = 3.0f;
     // Set reference to Tamagotchi
-    Tamagotchi_script tamagotchi = null;
+    public Tamagotchi_script tamagotchi = null;
 
     // Start is called before the first frame update
     void Start()
@@ -15,7 +15,7 @@ public class Hand_script : MonoBehaviour
         // Make the hand invisible on start
         gameObject.SetActive(false);
         // Find the Tamagotchi object and set the variables for the reference
-        tamagotchi = GameObject.Find("Tamagotchi_placeholder").GetComponent<Tamagotchi_script>();
+        // tamagotchi = GameObject.Find("Tamagotchi_placeholder").GetComponent<Tamagotchi_script>();
     }
 
     // Update is called once per frame

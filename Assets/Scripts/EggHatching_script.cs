@@ -9,16 +9,16 @@ public class EggHatching_script : MonoBehaviour
     // Hatch queue variable
     int hatch = 0;
     // Set reference for particles, hatching animation, tamagotchi, and particle system
-    private GameObject Hatch_p = null;
-    Tamagotchi_script tamagotchi = null;
+    public GameObject Hatch_p = null;
+    public Tamagotchi_script tamagotchi = null;
     public ParticleSystem ps;
-    private Animation anim;
+    public Animation anim;
 
     // Start is called before the first frame update
     void Start()
     {
         // Find the Tamagotchi object and set the variables for the reference
-        tamagotchi = GameObject.Find("Tamagotchi_placeholder").GetComponent<Tamagotchi_script>();
+        // tamagotchi = GameObject.Find("Tamagotchi_placeholder").GetComponent<Tamagotchi_script>();
         // Find hatching particles
         Hatch_p = GameObject.Find("Egg Hatch Particles");
         // Get particle system of hatching particles
