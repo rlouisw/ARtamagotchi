@@ -6,7 +6,7 @@ public class Evolution_script : MonoBehaviour
 {
     float cntdnw = 5.0f;
     // Hatch queue variable
-    int evo = 0;
+    public int evo = 0;
     // Set reference for particles, hatching animation, tamagotchi, and particle system
     public Tamagotchi_script tamagotchi = null;
     public Animation anim;

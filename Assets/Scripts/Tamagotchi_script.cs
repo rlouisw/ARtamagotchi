@@ -170,6 +170,8 @@ public class Tamagotchi_script : MonoBehaviour
         deathEgg.SetActive(false);
         eggButton.SetActive(true);
         stage = 0;
+        Evo_script.evo = 0;
+        Hatch_script.hatch = 0;
     }
 
     private void happy(int change)
@@ -238,6 +240,7 @@ public class Tamagotchi_script : MonoBehaviour
                 burger.SetActive(false);
                 cookie.SetActive(false);
                 playerButtons.SetActive(false);
+                meter.SetActive(false);
             }
             else if (stage == 3)
             {
@@ -247,11 +250,14 @@ public class Tamagotchi_script : MonoBehaviour
                 burger.SetActive(false);
                 cookie.SetActive(false);
                 playerButtons.SetActive(false);
+                meter.SetActive(false);
             }
             else
                 startOverPlayer();
             eggButton.SetActive(true);
             stage = 0;
+            Evo_script.evo = 0;
+            Hatch_script.hatch = 0;
         }
     }
 

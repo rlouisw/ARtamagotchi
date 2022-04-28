@@ -7,7 +7,7 @@ public class EggHatching_script : MonoBehaviour
     // 10 second timer for hatching tamagotchi
     float cntdnw = 10.0f;
     // Hatch queue variable
-    int hatch = 0;
+    public int hatch = 0;
     // Set reference for particles, hatching animation, tamagotchi, and particle system
     public GameObject Hatch_p = null;
     public Tamagotchi_script tamagotchi = null;
