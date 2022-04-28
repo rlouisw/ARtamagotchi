@@ -8,7 +8,7 @@ public class Meter_script : MonoBehaviour
     void Start()
     {
         // Meter starts hidden
-        gameObject.SetActive(false);
+        gameObject.SetActive(true);
     }
 
     // Update is called once per frame

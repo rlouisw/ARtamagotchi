@@ -13,7 +13,7 @@ public class Hand_script : MonoBehaviour
     void Start()
     {
         // Make the hand invisible on start
-        gameObject.SetActive(false);
+        gameObject.SetActive(true);
         // Find the Tamagotchi object and set the variables for the reference
         // tamagotchi = GameObject.Find("Tamagotchi_placeholder").GetComponent<Tamagotchi_script>();
     }
