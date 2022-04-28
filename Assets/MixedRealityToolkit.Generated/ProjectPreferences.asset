@@ -16,14 +16,24 @@ MonoBehaviour:
     keys:
     - _MixedRealityToolkit_Editor_IgnoreSettingsPrompts
     - _MixedRealityToolkit_Editor_LockProfiles
+<<<<<<< Updated upstream
     - MixedRealityToolkit_Editor_RunOptimalConfig
     - MixedRealityToolkit_Editor_NullDataProviders
     values: 00010100
+=======
+    - MixedRealityToolkit_Editor_NullDataProviders
+    - MixedRealityToolkit_Editor_RunOptimalConfig
+    values: 00010001
+>>>>>>> Stashed changes
   intPreferences:
     keys:
     - _MixedRealityToolkit_Editor_ConfiguratorState
     - MixedRealityToolkit_Editor_AudioSpatializerCount
+<<<<<<< Updated upstream
     values: 0000000000000000
+=======
+    values: f401000002000000
+>>>>>>> Stashed changes
   floatPreferences:
     keys: []
     values: []

@@ -4,8 +4,17 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
+<<<<<<< Updated upstream
   m_Scenes: []
   m_configObjects:
+=======
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Main.unity
+    guid: 4cfd6108f7acd2442b87d34f77a342b4
+  m_configObjects:
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 05ea8babf16feec4392d61e0a9d27768, type: 2}
+>>>>>>> Stashed changes
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 3bbafa72ff0203b45a11b77374f6d846, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: ed1c7392e7fcbbe4ba28cdbd5c1c2c7a, type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: d88fbbdc0ba659f419f799df0d2944b7, type: 2}
