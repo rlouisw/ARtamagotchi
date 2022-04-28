@@ -109,7 +109,7 @@ public class Tamagotchi_script : MonoBehaviour
             currentAge = age;
         }
 
-        if (stage >= 2 && age != 0 && Mathf.Round((age - birthAge)) % 6000 == 0)
+        if (stage >= 2 && age >= 60 && Mathf.Round((age - birthAge)) % 60 == 0)
         {
             poo.SetActive(true);
             happy(-20);
