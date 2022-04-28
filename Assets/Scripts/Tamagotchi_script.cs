@@ -37,6 +37,7 @@ public class Tamagotchi_script : MonoBehaviour
     public GameObject meter = null;
     public GameObject startOverP = null;
     public GameObject egg = null;
+    public GameObject weatherStates = null;
     //Sounds
     public AudioClip babyH = null;
     public AudioClip babyS = null;
@@ -62,13 +63,15 @@ public class Tamagotchi_script : MonoBehaviour
      //create ref to health bar script 
     public healthBar healthbar; 
     public GameObject adult = null;
+    bool outdoor = false;
 
     // Start is called before the first frame update
     void Start()
     {
         stage = 0;
         currentHealth = maxHealth; 
-        healthbar.SetMax(maxHealth); 
+        healthbar.SetMax(maxHealth);
+        outdoor = false;
 
     }
 
@@ -189,8 +192,6 @@ public class Tamagotchi_script : MonoBehaviour
         deathEgg.SetActive(false);
         eggButton.SetActive(true);
         stage = 0;
-        Evo_script.evo = 0;
-        Hatch_script.hatch = 0;
     }
 
     private void happy(int change)
@@ -226,6 +227,20 @@ public class Tamagotchi_script : MonoBehaviour
     {
         cookie.SetActive(true);
         currentAge = age;
+    }
+
+    public void outside()
+    {
+        if (!outdoor)
+        {
+            weatherStates.SetActive(true);
+            outdoor = true;
+        }
+        else
+        {
+            weatherStates.SetActive(false);
+            outdoor = false;
+        }
     }
 
     public void clean()
