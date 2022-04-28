@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Tamagotchi_script : MonoBehaviour
 {
@@ -226,7 +227,8 @@ public class Tamagotchi_script : MonoBehaviour
 
     public void startOverDev()
     {
-        if (stage != 0)
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        /*if (stage != 0)
         {
             if (stage == 1)
             {
@@ -258,7 +260,7 @@ public class Tamagotchi_script : MonoBehaviour
             stage = 0;
             Evo_script.evo = 0;
             Hatch_script.hatch = 0;
-        }
+        }*/
     }
 
     public void foodUpDev()
