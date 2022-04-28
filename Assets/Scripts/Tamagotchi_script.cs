@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class Tamagotchi_script : MonoBehaviour
 {
@@ -15,6 +16,8 @@ public class Tamagotchi_script : MonoBehaviour
     public int stage = 0;
     public int currentHealth;
     public int maxHealth = 100;
+    int num1 = 0;
+    int num2 = 0;
     //Game Objects
     public GameObject pinkEgg = null;
     public GameObject greenEgg = null;
@@ -46,6 +49,11 @@ public class Tamagotchi_script : MonoBehaviour
     public GameObject ichigotchiG = null;
     public GameObject rug = null;
     public GameObject outdoorG = null;
+    public GameObject miniGame = null;
+    public GameObject rules = null;
+    public GameObject results = null;
+    public TMP_Text resultsLabel = null;
+    
     //Sounds
     public AudioClip babyH = null;
     public AudioClip babyS = null;
@@ -308,4 +316,74 @@ public class Tamagotchi_script : MonoBehaviour
         }
         healthbar.SetHealth(currentHealth); 
     }
+
+    public void play()
+    {
+        miniGame.SetActive(true);
+        num1 = Random.Range(1, 10);
+        num2 = num1;
+        while (num1 == num2)
+        {
+            num2 = Random.Range(1, 10);
+        }
+    }
+
+    public void higher()
+    {
+        if (num1 < num2)
+            goal(true);
+        else
+            goal(false);
+    }
+
+    public void lower()
+    {
+        if (num1 > num2)
+            goal(true);
+        else
+            goal(false);
+    }
+
+    private void goal(bool winner)
+    {
+        rules.SetActive(false);
+        results.SetActive(true);
+        string outcome;
+        if (winner)
+        {
+            outcome = "win";
+            audio.clip = win;
+        }
+        else
+        {
+            outcome = "lose";
+            audio.clip = lose;
+        }
+        resultsLabel.text = "My number is " + num1.ToString() + ", your number is " + num2.ToString() + ".  You " + outcome + ".  Do you want to play again?";
+        audio.Play();
+        /*if (winner)
+        {
+            if (baby != null)
+                happy(20);
+            else
+                happy(-5);
+        }
+        else
+            happy(20);*/
+    }
+
+    public void yes()
+    {
+        results.SetActive(false);
+        rules.SetActive(true);
+        play();
+    }
+
+    public void no()
+    {
+        results.SetActive(false);
+        rules.SetActive(true);
+        miniGame.SetActive(false);
+    }
+
 }
