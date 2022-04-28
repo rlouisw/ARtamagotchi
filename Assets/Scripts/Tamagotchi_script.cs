@@ -15,7 +15,7 @@ public class Tamagotchi_script : MonoBehaviour
     public int stage = 0;
     public int currentHealth;
     public int maxHealth = 100;
-
+    //Game Objects
     public GameObject pinkEgg = null;
     public GameObject greenEgg = null;
     public GameObject yellowEgg = null;
@@ -37,6 +37,24 @@ public class Tamagotchi_script : MonoBehaviour
     public GameObject meter = null;
     public GameObject startOverP = null;
     public GameObject egg = null;
+    //Sounds
+    public AudioClip babyH = null;
+    public AudioClip babyS = null;
+    public AudioClip grapeH = null;
+    public AudioClip grapeS = null;
+    public AudioClip kiwiH = null;
+    public AudioClip kiwiS = null;
+    public AudioClip pearH = null;
+    public AudioClip pearS = null;
+    public AudioClip peachH = null;
+    public AudioClip peachS = null;
+    public AudioClip ichigotchiH = null;
+    public AudioClip ichigotchiS = null;
+    public AudioClip win = null;
+    public AudioClip lose = null;
+    public AudioClip happyS = null;
+    public AudioClip sadS = null;
+    public AudioSource audio = null;
     // Animations
     public Evolution_script Evo_script = null;
     public EggHatching_script Hatch_script = null;
@@ -88,7 +106,7 @@ public class Tamagotchi_script : MonoBehaviour
             currentAge = age;
         }
 
-        if (stage >= 2 && Mathf.Round((age - birthAge)) % 600 == 0)
+        if (stage >= 2 && age != 0 && Mathf.Round((age - birthAge)) % 6000 == 0)
         {
             poo.SetActive(true);
             happy(-20);
@@ -182,6 +200,11 @@ public class Tamagotchi_script : MonoBehaviour
             happiness = 0;
         else if (happiness > 100)
             happiness = 100;
+        if (change < 0)
+            audio.clip = sadS;
+        else
+            audio.clip = happyS;
+        audio.PlayDelayed(3.0f);
     }
 
     private void hungry(int change)
@@ -228,39 +251,6 @@ public class Tamagotchi_script : MonoBehaviour
     public void startOverDev()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        /*if (stage != 0)
-        {
-            if (stage == 1)
-            {
-                egg.SetActive(false);
-                egg = null;
-            }
-            else if (stage == 2)
-            {
-                baby.SetActive(false);
-                poo.SetActive(false);
-                burger.SetActive(false);
-                cookie.SetActive(false);
-                playerButtons.SetActive(false);
-                meter.SetActive(false);
-            }
-            else if (stage == 3)
-            {
-                adult.SetActive(false);
-                adult = null;
-                poo.SetActive(false);
-                burger.SetActive(false);
-                cookie.SetActive(false);
-                playerButtons.SetActive(false);
-                meter.SetActive(false);
-            }
-            else
-                startOverPlayer();
-            eggButton.SetActive(true);
-            stage = 0;
-            Evo_script.evo = 0;
-            Hatch_script.hatch = 0;
-        }*/
     }
 
     public void foodUpDev()

@@ -1172,6 +1172,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 871277738}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: PlayOneShot
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: 3c00499e61df3dc49b7bb9f6bcd3d82e, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &97276988
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2447,6 +2459,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 871277738}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: PlayOneShot
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: a5953da41eb6b2b498d3b631a7a25fe5, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &175680935
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3705,6 +3729,36 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 292868751}
   m_CullTransparentMesh: 1
+--- !u!21 &304308794
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 'block_scaledMaterial
+
+    25462'
+  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 466130d690664350b2dc76cc014ed082, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats: []
+    m_Colors:
+    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1 &309235482
 GameObject:
   m_ObjectHideFlags: 0
@@ -4288,7 +4342,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &336133138
 RectTransform:
   m_ObjectHideFlags: 0
@@ -12444,6 +12498,23 @@ MonoBehaviour:
   meter: {fileID: 114350804}
   startOverP: {fileID: 1350986999}
   egg: {fileID: 0}
+  babyH: {fileID: 8300000, guid: 64132a026e7a39245a54e17853b57b84, type: 3}
+  babyS: {fileID: 8300000, guid: 3a6bc2ef0b3fd3b4e8c2ec57deb478d7, type: 3}
+  grapeH: {fileID: 8300000, guid: 764c5feda2f65994a85c4bd10b3c1e27, type: 3}
+  grapeS: {fileID: 8300000, guid: 2765ce7ae02813048801562498e4d25b, type: 3}
+  kiwiH: {fileID: 8300000, guid: 80537cb7a59e9f046bd499c8fb940358, type: 3}
+  kiwiS: {fileID: 8300000, guid: a4a9c84a1a0c55b45a1581326f4f2313, type: 3}
+  pearH: {fileID: 8300000, guid: 93bded89d5fd2fa42af7ece57a952a91, type: 3}
+  pearS: {fileID: 8300000, guid: 5ee4bf1afcd80674bafa9abf8bf5d307, type: 3}
+  peachH: {fileID: 8300000, guid: f0bca2083be331846a44d23bd518cda0, type: 3}
+  peachS: {fileID: 8300000, guid: fdda7e03fce308d46ae13ac393793ba6, type: 3}
+  ichigotchiH: {fileID: 8300000, guid: cc229c8c6f859794a8fb6cdbf5c468c0, type: 3}
+  ichigotchiS: {fileID: 8300000, guid: 21263783fcedd5045a02034a76ad946a, type: 3}
+  win: {fileID: 8300000, guid: ed2dd00465e55e349b6e16aa4c03a257, type: 3}
+  lose: {fileID: 8300000, guid: 88ca36fa2db1d9e4d9f8e942fcb7b01c, type: 3}
+  happyS: {fileID: 0}
+  sadS: {fileID: 0}
+  audio: {fileID: 871277738}
   Evo_script: {fileID: 0}
   Hatch_script: {fileID: 0}
   clean_script: {fileID: 0}
@@ -14496,6 +14567,18 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 871277738}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: PlayOneShot
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: deb6c840f2792864db25a9943ea161c6, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -19700,36 +19783,6 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
---- !u!21 &874870418
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 'block_scaledMaterial
-
-    106808'
-  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 5
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 466130d690664350b2dc76cc014ed082, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats: []
-    m_Colors:
-    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
-  m_BuildTextureStacks: []
 --- !u!1 &876131028
 GameObject:
   m_ObjectHideFlags: 0
@@ -27364,7 +27417,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1075673113
 RectTransform:
   m_ObjectHideFlags: 0
@@ -46139,6 +46192,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 871277738}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: PlayOneShot
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: 947d203bbf81a4b4997226c0661c7131, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1847573806
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53423,7 +53488,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 874870418}
+  - {fileID: 304308794}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

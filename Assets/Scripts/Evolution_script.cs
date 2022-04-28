@@ -43,26 +43,36 @@ public class Evolution_script : MonoBehaviour
                 {
                     tamagotchi.adult = tamagotchi.ichigotchi;
                     tamagotchi.weight += 20;
+                    tamagotchi.happyS = tamagotchi.ichigotchiH;
+                    tamagotchi.sadS = tamagotchi.ichigotchiS;
                 }
                 else if (tamagotchi.happiness >= 80)
                 {
                     tamagotchi.adult = tamagotchi.peach;
                     tamagotchi.weight += 25;
+                    tamagotchi.happyS = tamagotchi.peachH;
+                    tamagotchi.sadS = tamagotchi.peachS;
                 }
                 else if (tamagotchi.happiness >= 60)
                 {
                     tamagotchi.adult = tamagotchi.pear;
                     tamagotchi.weight += 30;
+                    tamagotchi.happyS = tamagotchi.pearH;
+                    tamagotchi.sadS = tamagotchi.pearS;
                 }
                 else if (tamagotchi.happiness >= 40)
                 {
                     tamagotchi.adult = tamagotchi.kiwi;
                     tamagotchi.weight += 15;
+                    tamagotchi.happyS = tamagotchi.kiwiH;
+                    tamagotchi.sadS = tamagotchi.kiwiS;
                 }
                 else
                 {
                     tamagotchi.adult = tamagotchi.grape;
                     tamagotchi.weight += 10;
+                    tamagotchi.happyS = tamagotchi.grapeH;
+                    tamagotchi.sadS = tamagotchi.grapeS;
                 }
                 tamagotchi.adult.SetActive(true);
                 tamagotchi.currentAge = tamagotchi.age;

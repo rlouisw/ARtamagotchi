@@ -55,6 +55,8 @@ public class EggHatching_script : MonoBehaviour
                 tamagotchi.happiness = 40;
                 tamagotchi.hunger = 20;
                 tamagotchi.weight = 5;
+                tamagotchi.happyS = tamagotchi.babyH;
+                tamagotchi.sadS = tamagotchi.babyS;
             }
         }
     }
