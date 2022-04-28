@@ -38,6 +38,14 @@ public class Tamagotchi_script : MonoBehaviour
     public GameObject startOverP = null;
     public GameObject egg = null;
     public GameObject weatherStates = null;
+    public GameObject babyG = null;
+    public GameObject grapeG = null;
+    public GameObject kiwiG = null;
+    public GameObject pearG = null;
+    public GameObject peachG = null;
+    public GameObject ichigotchiG = null;
+    public GameObject rug = null;
+    public GameObject outdoorG = null;
     //Sounds
     public AudioClip babyH = null;
     public AudioClip babyS = null;
@@ -150,6 +158,7 @@ public class Tamagotchi_script : MonoBehaviour
         egg.SetActive(true);
         currentAge = age;
         stage = 1;
+        rug.SetActive(true);
     }
 
     public void hatchEgg()
@@ -235,11 +244,15 @@ public class Tamagotchi_script : MonoBehaviour
         {
             weatherStates.SetActive(true);
             outdoor = true;
+            rug.SetActive(false);
+            outdoorG.SetActive(true);
         }
         else
         {
             weatherStates.SetActive(false);
             outdoor = false;
+            outdoorG.SetActive(false);
+            rug.SetActive(true);
         }
     }
 

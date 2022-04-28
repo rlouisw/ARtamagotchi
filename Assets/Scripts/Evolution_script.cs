@@ -45,6 +45,7 @@ public class Evolution_script : MonoBehaviour
                     tamagotchi.weight += 20;
                     tamagotchi.happyS = tamagotchi.ichigotchiH;
                     tamagotchi.sadS = tamagotchi.ichigotchiS;
+                    tamagotchi.outdoorG = tamagotchi.ichigotchiG;
                 }
                 else if (tamagotchi.happiness >= 80)
                 {
@@ -52,6 +53,7 @@ public class Evolution_script : MonoBehaviour
                     tamagotchi.weight += 25;
                     tamagotchi.happyS = tamagotchi.peachH;
                     tamagotchi.sadS = tamagotchi.peachS;
+                    tamagotchi.outdoorG = tamagotchi.peachG;
                 }
                 else if (tamagotchi.happiness >= 60)
                 {
@@ -59,6 +61,7 @@ public class Evolution_script : MonoBehaviour
                     tamagotchi.weight += 30;
                     tamagotchi.happyS = tamagotchi.pearH;
                     tamagotchi.sadS = tamagotchi.pearS;
+                    tamagotchi.outdoorG = tamagotchi.pearG;
                 }
                 else if (tamagotchi.happiness >= 40)
                 {
@@ -66,6 +69,7 @@ public class Evolution_script : MonoBehaviour
                     tamagotchi.weight += 15;
                     tamagotchi.happyS = tamagotchi.kiwiH;
                     tamagotchi.sadS = tamagotchi.kiwiS;
+                    tamagotchi.outdoorG = tamagotchi.kiwiG;
                 }
                 else
                 {
@@ -73,6 +77,7 @@ public class Evolution_script : MonoBehaviour
                     tamagotchi.weight += 10;
                     tamagotchi.happyS = tamagotchi.grapeH;
                     tamagotchi.sadS = tamagotchi.grapeS;
+                    tamagotchi.outdoorG = tamagotchi.grapeG;
                 }
                 tamagotchi.adult.SetActive(true);
                 tamagotchi.currentAge = tamagotchi.age;
