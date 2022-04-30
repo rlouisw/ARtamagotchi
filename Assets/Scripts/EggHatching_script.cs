@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class EggHatching_script : MonoBehaviour
 {
-    // 10 second timer for hatching tamagotchi
-    float cntdnw = 10.0f;
+    // 3 second timer for hatching tamagotchi
+    float cntdnw = 3.0f;
     // Hatch queue variable
     public int hatch = 0;
     // Set reference for particles, hatching animation, tamagotchi, and particle system
@@ -17,8 +17,6 @@ public class EggHatching_script : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        // Find the Tamagotchi object and set the variables for the reference
-        // tamagotchi = GameObject.Find("Tamagotchi_placeholder").GetComponent<Tamagotchi_script>();
         // Find hatching particles
         Hatch_p = GameObject.Find("Egg Hatch Particles");
         // Get particle system of hatching particles
@@ -72,7 +70,7 @@ public class EggHatching_script : MonoBehaviour
         // Play hatching animation
         anim.Play("Egg_hatching_animation");
         // Queue hatch timer
-        cntdnw = 10.0f;
+        cntdnw = 3.0f;
         hatch = 1;
     }
 }

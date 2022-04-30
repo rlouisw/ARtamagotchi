@@ -7,17 +7,14 @@ public class Evolution_script : MonoBehaviour
     float cntdnw = 5.0f;
     // Hatch queue variable
     public int evo = 0;
-    // Set reference for particles, hatching animation, tamagotchi, and particle system
+    // Set reference for evolving animation, and tamagotchi
     public Tamagotchi_script tamagotchi = null;
     public Animation anim;
 
     // Start is called before the first frame update
     void Start()
     {
-        // Find the Tamagotchi object and set the variables for the reference
-        // tamagotchi = GameObject.Find("Tamagotchi_placeholder").GetComponent<Tamagotchi_script>();
-        // Make sure the particles are off
-        // Get hatch animation component
+        // Get evolution animation component
         anim = gameObject.GetComponent<Animation>();
     }
 
@@ -25,16 +22,16 @@ public class Evolution_script : MonoBehaviour
     {
         if (evo == 1)
         {
-            // While the egg is hatching
+            // While the Tamagotchi is evolving
             if (cntdnw > 0)
             {
-                // 10 seconds count down
+                // 5 seconds count down
                 cntdnw -= Time.deltaTime;
             }
             // When the couontdown is over
             if (cntdnw <= 0)
             {
-                // Do hatching protocol
+                // Do evolving protocol
                 gameObject.SetActive(false);
                 tamagotchi.poo.SetActive(false);
                 tamagotchi.burger.SetActive(false);
@@ -86,12 +83,12 @@ public class Evolution_script : MonoBehaviour
         }
     }
 
-    // Hatch Egg into Tamagotchi
+    // Evolve Tamagotchi
     public void Evolve()
     {
-        // Play hatching animation
+        // Play evolving animation
         anim.Play("Evolution_animation");
-        // Queue hatch timer
+        // Queue evolving timer
         cntdnw = 5.0f;
         evo = 1;
     }

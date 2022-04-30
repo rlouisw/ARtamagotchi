@@ -76,8 +76,6 @@ public class Tamagotchi_script : MonoBehaviour
     public Evolution_script Evo_script = null;
     public EggHatching_script Hatch_script = null;
     public Flush_script clean_script = null;
-     //create ref to health bar script 
-    public healthBar healthbar; 
     public GameObject adult = null;
     bool outdoor = false;
 
@@ -86,7 +84,6 @@ public class Tamagotchi_script : MonoBehaviour
     {
         stage = 0;
         currentHealth = maxHealth; 
-        healthbar.SetMax(maxHealth);
         outdoor = false;
 
     }
@@ -307,14 +304,6 @@ public class Tamagotchi_script : MonoBehaviour
     public void healthDownDev()
     {
         happy(-20);
-    }
-
-    void takeDamage (int damage) {
-        currentHealth -= damage; 
-        if (currentHealth <0) {
-            currentHealth = 0; 
-        }
-        healthbar.SetHealth(currentHealth); 
     }
 
     public void play()
