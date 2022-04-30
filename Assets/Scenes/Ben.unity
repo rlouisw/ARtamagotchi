@@ -35219,9 +35219,9 @@ MonoBehaviour:
   faceUserDefinedTargetTransform: 0
   targetToFace: {fileID: 0}
   pivotAxis: 7
-  minDistance: 0.3
-  maxDistance: 0.5
-  defaultDistance: 0.4
+  minDistance: 0.5
+  maxDistance: 0.65
+  defaultDistance: 0.55
   maxViewHorizontalDegrees: 30
   maxViewVerticalDegrees: 20
   reorientWhenOutsideParameters: 1
@@ -35250,7 +35250,7 @@ MonoBehaviour:
   trackedHandness: 3
   trackedHandJoint: 2
   transformOverride: {fileID: 0}
-  additionalOffset: {x: 0, y: -0.125, z: 0}
+  additionalOffset: {x: 0, y: 0.125, z: 0}
   additionalRotation: {x: 0, y: 0, z: 0}
   updateSolvers: 1
 --- !u!4 &770567394 stripped
@@ -35578,9 +35578,9 @@ MonoBehaviour:
   faceUserDefinedTargetTransform: 0
   targetToFace: {fileID: 0}
   pivotAxis: 7
-  minDistance: 0.3
-  maxDistance: 0.5
-  defaultDistance: 0.4
+  minDistance: 0.5
+  maxDistance: 0.65
+  defaultDistance: 0.55
   maxViewHorizontalDegrees: 30
   maxViewVerticalDegrees: 20
   reorientWhenOutsideParameters: 1
@@ -37893,9 +37893,9 @@ MonoBehaviour:
   faceUserDefinedTargetTransform: 0
   targetToFace: {fileID: 0}
   pivotAxis: 7
-  minDistance: 0.3
-  maxDistance: 0.5
-  defaultDistance: 0.4
+  minDistance: 0.5
+  maxDistance: 0.65
+  defaultDistance: 0.55
   maxViewHorizontalDegrees: 30
   maxViewVerticalDegrees: 20
   reorientWhenOutsideParameters: 1
@@ -37924,7 +37924,7 @@ MonoBehaviour:
   trackedHandness: 3
   trackedHandJoint: 2
   transformOverride: {fileID: 0}
-  additionalOffset: {x: 0.25, y: 0.125, z: 0}
+  additionalOffset: {x: 0.25, y: 0.1, z: 0}
   additionalRotation: {x: 0, y: 0, z: 0}
   updateSolvers: 1
 --- !u!1 &962775905
