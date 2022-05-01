@@ -3,7 +3,12 @@ guid: c31f7bd203e9f9447a791e34fa9bc9f8
 ModelImporter:
   serializedVersion: 21202
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MoonDust01
+    second: {fileID: 2100000, guid: e8a8ae9668ac2d545b9f4e5b11399f63, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
