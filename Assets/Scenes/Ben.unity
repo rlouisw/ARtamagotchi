@@ -2356,43 +2356,43 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c31f7bd203e9f9447a791e34fa9bc9f8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.0039
+      value: 0.0022
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c31f7bd203e9f9447a791e34fa9bc9f8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.0438
+      value: -0.043363594
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c31f7bd203e9f9447a791e34fa9bc9f8, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.0054
+      value: -0.0108
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c31f7bd203e9f9447a791e34fa9bc9f8, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9549546
+      value: 0.8719015
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c31f7bd203e9f9447a791e34fa9bc9f8, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.22710495
+      value: 0.28607798
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c31f7bd203e9f9447a791e34fa9bc9f8, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.19068378
+      value: 0.07807961
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c31f7bd203e9f9447a791e34fa9bc9f8, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.01117466
+      value: -0.38968015
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c31f7bd203e9f9447a791e34fa9bc9f8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 25.435
+      value: 34.036
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c31f7bd203e9f9447a791e34fa9bc9f8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 24.136
+      value: -6.013
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c31f7bd203e9f9447a791e34fa9bc9f8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 6.866
+      value: -50.005
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c31f7bd203e9f9447a791e34fa9bc9f8, type: 3}
       propertyPath: m_Name
@@ -29665,6 +29665,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 683486634}
   m_CullTransparentMesh: 1
+--- !u!1 &691711647 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: c31f7bd203e9f9447a791e34fa9bc9f8, type: 3}
+  m_PrefabInstance: {fileID: 128584460}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &693455962
 GameObject:
   m_ObjectHideFlags: 0
@@ -36759,8 +36764,8 @@ Camera:
   m_GameObject: {fileID: 810106713}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 2
-  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 1}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -36774,7 +36779,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.1
-  far clip plane: 50
+  far clip plane: 1000
   field of view: 60
   orthographic: 0
   orthographic size: 5
@@ -65119,7 +65124,7 @@ MonoBehaviour:
   kiwiG: {fileID: 389075510}
   pearG: {fileID: 839289289}
   peachG: {fileID: 2118702342}
-  ichigotchiG: {fileID: 919132149155446097, guid: c31f7bd203e9f9447a791e34fa9bc9f8, type: 3}
+  ichigotchiG: {fileID: 691711647}
   rug: {fileID: 241516613}
   outdoorG: {fileID: 0}
   miniGame: {fileID: 943602204}
