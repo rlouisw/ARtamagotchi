@@ -200,12 +200,7 @@ public class Tamagotchi_script : MonoBehaviour
 
     public void startOverPlayer()
     {
-        startOverP.SetActive(false);
-        meter.SetActive(false);
-        death.SetActive(false);
-        deathEgg.SetActive(false);
-        eggButton.SetActive(true);
-        stage = 0;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     private void happy(int change)
